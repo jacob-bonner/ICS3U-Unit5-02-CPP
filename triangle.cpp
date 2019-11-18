@@ -25,8 +25,8 @@ int main() {
     // This function takes two inputs then calls the calculate function
 
     // Variables
-    int base;
-    int height;
+    int baseFromUser;
+    int heightFromUser;
     std::string baseAsString;
     std::string heightAsString;
 
@@ -39,11 +39,11 @@ int main() {
         std::cin >> heightAsString;
 
         try {
-            base = std::stoi(baseAsString);
-            height = std::stoi(heightAsString);
-            calculate(base, height);
-            if (base == std::stoi(baseAsString) && \
-                height == std::stoi(heightAsString)) {
+            baseFromUser = std::stoi(baseAsString);
+            heightFromUser = std::stoi(heightAsString);
+            calculate(baseFromUser, heightFromUser);
+            if (baseFromUser == std::stoi(baseAsString) && \
+                heightFromUser == std::stoi(heightAsString)) {
                 break;
             } else {
                 std::cout << "Error, unable to process inputs" << std::endl;
