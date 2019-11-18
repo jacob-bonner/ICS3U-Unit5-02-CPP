@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <iostream>
 
-void calculate(float base, float height) {
+void Calculate(float base, float height) {
     // This function calculates the area of a triangle
 
     // Variables
@@ -41,7 +41,7 @@ int main() {
         try {
             baseFromUser = std::stoi(baseAsString);
             heightFromUser = std::stoi(heightAsString);
-            calculate(baseFromUser, heightFromUser);
+            Calculate(baseFromUser, heightFromUser);
             if (baseFromUser == std::stoi(baseAsString) && \
                 heightFromUser == std::stoi(heightAsString)) {
                 break;
